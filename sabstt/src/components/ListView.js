@@ -64,7 +64,7 @@ class ListView extends Component {
     return (
       <div>
         <h1>Train Tickets</h1>
-        <button onClick={this.sortTime}>Sort By Date</button>
+        <button onClick={this.sortTime}>Sort By Time</button>
         <button onClick={this.sortPrice}>Sort By Price</button>
 
         {tickets}
