@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 
 import { createStore } from "redux";
 import trainsReducer from "./reducers";
+import { fetchPosts } from "./actions/index";
 
 const store = createStore(
   trainsReducer,
@@ -23,4 +24,5 @@ export default class App extends Component {
   }
 }
 
-console.log(store.getState(), "this");
+// console.log(store.getState(), "this");
+store.dispatch(fetchPosts);
